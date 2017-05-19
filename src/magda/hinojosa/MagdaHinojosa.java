@@ -18,6 +18,20 @@ public class MagdaHinojosa {
         
         System.out.println("Hola Mundo cruel");
         
+        // probaremos nuestra solucion
+        //crear un usuario hipotetico
+        Usuario u=new Usuario();
+        //le asignamos valores
+        u.altura = 1.68f;
+        u.peso = 73f;
+        
+        //generamos el modelo
+        
+        Imc imc=new Imc();
+        
+        
+        System.out.println("El valor del imc es: "+imc.calcular(u));
+        
     }
     
 }
