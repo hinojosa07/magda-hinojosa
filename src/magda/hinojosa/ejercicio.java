@@ -95,6 +95,23 @@ public class ejercicio extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
+        String tPeso = textoPeso.getText();
+        String tAltura = textoAltura.getText();
+        //Convertir a flotante
+        float peso = Float.parseFloat(tPeso);
+        float altura = Float.parseFloat(tAltura);
+        
+        Usuario u = new Usuario();
+        
+        //Le asignamos valores
+        u.altura = altura;
+        u.peso = peso;
+        
+        //Generamos el modelo
+        Imc imc = new Imc();
+        
+        etiquetaResultado.setText("El valor del IMC es " + imc.calcular(u));
+        
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
